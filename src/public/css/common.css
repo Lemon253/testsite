@@ -28,11 +28,12 @@
 .header-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
 .header-nav__link {
-    color: #fff;
+    /* color: #fff; */
+    color: yellow;
     text-decoration: none;
 }
 
