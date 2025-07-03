@@ -6,31 +6,26 @@
 
 @section('content')
 <div class="attendance__alert">
-    // メッセージ機能
+    // テスト
 </div>
 
-<div class="attendance__content">
-    <div class="attendance__panel">
-        <form class="attendance__button">
-            <button class="attendance__button-submit" type="submit">勤務開始</button>
-        </form>
-        <form class="attendance__button">
-            <button class="attendance__button-submit" type="submit">勤務終了</button>
-        </form>
+<div class="card">
+    <div class="card__img">
+        <img src="{{ asset('img/card.jpg') }}" alt="">
+        <!-- <img src="img/card.jpg" alt="" /> -->
     </div>
-    <div class="attendance-table">
-        <table class="attendance-table__inner">
-            <tr class="attendance-table__row">
-                <th class="attendance-table__header">名前</th>
-                <th class="attendance-table__header">開始時間</th>
-                <th class="attendance-table__header">終了時間</th>
-            </tr>
-            <tr class="attendance-table__row">
-                <td class="attendance-table__item">サンプル太郎</td>
-                <td class="attendance-table__item">サンプル</td>
-                <td class="attendance-table__item">サンプル</td>
-            </tr>
-        </table>
+    <div class="card__content">
+        <div class="card__content-cat">カテゴリー</div>
+        <h2 class="card__content-ttl">
+            今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。
+        </h2>
+        <div class="card__content-tag">
+            <p class="card__content-tag-item">#朝ごはん</p>
+            <p class="card__content-tag-item card__content-tag-item--last">
+                2021/01/01
+            </p>
+        </div>
     </div>
 </div>
+
 @endsection
