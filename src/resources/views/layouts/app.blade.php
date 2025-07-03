@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header__inner">
             <a href="/" class="header__logo">
-                Test
+                フリマ
             </a>
             <nav>
                 <ul class="header-nav">

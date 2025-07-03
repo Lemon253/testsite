@@ -5,27 +5,58 @@
 @endsection
 
 @section('content')
-<div class="attendance__alert">
-    // テスト
-</div>
-
-<div class="card">
-    <div class="card__img">
-        <img src="{{ asset('img/card.jpg') }}" alt="">
-        <!-- <img src="img/card.jpg" alt="" /> -->
+<div class="flex__item">
+    <div class="practice__card">
+        <a href="/login">
+            <div class="card__img">
+                <img src="img/card.jpg" alt="" />
+            </div>
+        </a>
+        <div class="card__content">
+            <div class="card__cat">カテゴリー</div>
+            <h2 class="card__ttl">
+                今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。
+            </h2>
+            <div class="tag">
+                <p class="card__tag">#朝ごはん</p>
+                <p class="card__date">2021/01/01</p>
+            </div>
+        </div>
     </div>
-    <div class="card__content">
-        <div class="card__content-cat">カテゴリー</div>
-        <h2 class="card__content-ttl">
-            今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。
-        </h2>
-        <div class="card__content-tag">
-            <p class="card__content-tag-item">#朝ごはん</p>
-            <p class="card__content-tag-item card__content-tag-item--last">
-                2021/01/01
-            </p>
+    <div class="practice__card">
+        <a href="https://google.com">
+            <div class="card__img">
+                <img src="img/card.jpg" alt="" />
+            </div>
+        </a>
+        <div class="card__content">
+            <div class="card__cat">カテゴリー</div>
+            <h2 class="card__ttl">
+                今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。 </h2>
+            <div class="tag">
+                <p class="card__tag">#朝ごはん</p>
+                <p class="card__date">2021/01/01</p>
+            </div>
+        </div>
+    </div>
+    <div class="practice__card">
+        <a href="https://google.com">
+            <div class="card__img">
+                <img src="img/card.jpg" alt="" />
+            </div>
+        </a>
+        <div class="card__content">
+            <div class="card__cat">カテゴリー</div>
+            <h2 class="card__ttl">
+                今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。
+            </h2>
+            <div class="tag">
+                <p class="card__tag">#朝ごはん</p>
+                <p class="card__date">2021/01/01</p>
+            </div>
         </div>
     </div>
 </div>
+
 
 @endsection
