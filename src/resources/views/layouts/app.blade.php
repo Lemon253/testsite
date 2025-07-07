@@ -17,6 +17,7 @@
             <a href="/" class="header__logo">
                 フリマ
             </a>
+            <!-- リンクの調整中 -->
             <nav>
                 <ul class="header-nav">
                     @if (Auth::check())
@@ -37,6 +38,9 @@
                         <a href="/register" class="header-nav__link">会員登録</a>
                     </li>
                     @endif
+                    <li class="header-nav__item">
+                        <a href="/sell" class="header-nav__link--sell">出品</a>
+                    </li>
                 </ul>
             </nav>
         </div>
