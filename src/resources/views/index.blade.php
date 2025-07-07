@@ -6,6 +6,7 @@
 
 @section('content')
 <div class="flex__item">
+    @foreach($items as $item)
     <div class="practice__card">
         <a href="/login">
             <div class="card__img">
@@ -13,12 +14,13 @@
             </div>
         </a>
         <div class="card__content">
-            <div class="card__cat">カテゴリー</div>
+            <div class="card__cat">{{ $item->price }}</div>
             <h2 class="card__ttl">
-                商品名
+                {{ $item->name }}
             </h2>
         </div>
     </div>
+    @endforeach
     <div class="practice__card">
         <a href="https://google.com">
             <div class="card__img">
