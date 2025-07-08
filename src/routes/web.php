@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
+//認証ミドルウェア
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +17,8 @@ use App\Http\Controllers\ItemController;
 */
 
 Route::get('/', [ItemController::class, 'index']);
+//認証ミドルウェア
+Route::middleware('auth')->group(function () {
+    Route::get('/', [AuthController::class, 'buy']);
+    Route::get('/', [AuthController::class, 'sell']);
+});

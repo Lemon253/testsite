@@ -19,17 +19,29 @@
     padding: 15px 25px;
 }
 
+.card__content-common {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card__ttl {
     font-size: 18px;
     margin-bottom: 30px;
     font-weight: 400;
 }
 
-.card__cat {
+.card__price {
     padding: 5px 10px;
     background: #008888;
     margin-bottom: 15px;
-    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+
+.card__buy {
+    padding: 5px 10px;
+    background: red;
+    margin-bottom: 15px;
     color: #fff;
     font-size: 14px;
 }
