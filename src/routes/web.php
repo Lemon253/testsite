@@ -18,8 +18,10 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [ItemController::class, 'index']);
 //Route::get('/', [AuthController::class, 'index']);
+
 //認証ミドルウェア
 Route::middleware('auth')->group(function () {
-    Route::get('/', [AuthController::class, 'buy']);
-    Route::get('/', [AuthController::class, 'sell']);
+    //出品と購入を行う際にログインが求められる
+    Route::get('/buy', [AuthController::class, 'buy']);
+    Route::get('/sell', [AuthController::class, 'sell']);
 });
