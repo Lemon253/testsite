@@ -14,4 +14,14 @@ class ItemController extends Controller
         $items = Item::all();
         return view('index', compact('items'));
     }
+
+    //出品時のメッセージ送信
+    /*
+    public function sell(Request $request)
+    {
+        $buy = $request->only(['content']);
+        Buy::create($sell);
+        return redirect('/')->with('message','商品を出品しました' )s
+    }
+        */
 }
