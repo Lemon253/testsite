@@ -17,6 +17,7 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', [ItemController::class, 'index']);
+//Route::get('/', [AuthController::class, 'index']);
 //認証ミドルウェア
 Route::middleware('auth')->group(function () {
     Route::get('/', [AuthController::class, 'buy']);
