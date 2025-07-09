@@ -8,6 +8,7 @@
 <div class="flex__item">
     @foreach($items as $item)
     <div class="practice__card">
+        <!-- 商品詳細ページに飛ぶ？ -->
         <a href="/login">
             <div class="card__img">
                 <img src="img/card.jpg" alt="" />
@@ -16,7 +17,8 @@
         <div class="card__content">
             <div class="card__content-common">
                 <div class="card__price">¥{{ $item->price }}</div>
-                <div class="card__buy">商品を購入</div>
+                <!-- aタグで購入手続きページに飛ぶ -->
+                <div class="card__buy">購入に進む</div>
             </div>
             <h2 class="card__ttl">
                 {{ $item->name }}
