@@ -9,7 +9,7 @@
     @foreach($items as $item)
     <div class="practice__card">
         <!-- 商品詳細ページに飛ぶ？ -->
-        <a href="/login">
+        <a href="/item">
             <div class="card__img">
                 <img src="img/card.jpg" alt="" />
             </div>

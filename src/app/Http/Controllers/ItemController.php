@@ -15,6 +15,12 @@ class ItemController extends Controller
         return view('index', compact('items'));
     }
 
+    public function item()
+    {
+        return view('item');
+    }
+
+
     //出品時のメッセージ送信
     /*
     public function sell(Request $request)

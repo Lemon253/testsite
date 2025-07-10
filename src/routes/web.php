@@ -22,6 +22,6 @@ Route::get('/', [ItemController::class, 'index']);
 //認証ミドルウェア
 Route::middleware('auth')->group(function () {
     //出品と購入を行う際にログインが求められる
-    Route::get('/buy', [AuthController::class, 'buy']);
+    Route::get('/item', [ItemController::class, 'item']);
     Route::get('/sell', [AuthController::class, 'sell']);
 });

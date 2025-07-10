@@ -1,0 +1,22 @@
+.flex__item {
+    display: flex;
+    margin: 30px 0px 0px 0px;
+}
+
+.item__left {
+    display: flex;
+    margin: 30px 0px 0px 0px;
+}
+
+.item__img img {
+    width: 100%;
+}
+
+.item__right {
+    display: flex;
+    margin: 30px 0px 0px 0px;
+}
+.item-content {
+    display: inline-block;
+    margin-bottom: 10px;
+}
