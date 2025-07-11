@@ -6,10 +6,8 @@
 
 @section('content')
 <div class="flex-item">
-    <div class="item__left">
-        <div class="item-img">
-            <img src="/src/storage/app/public/img/card.jpg" alt="">
-        </div>
+    <div class="item__img">
+        <img src="{{ asset('storage/img/card.jpg')}}" />
     </div>
     <div class="item__right">
         <div class="item-content">
