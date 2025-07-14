@@ -24,4 +24,6 @@ Route::middleware('auth')->group(function () {
     //出品と購入を行う際にログインが求められる
     Route::get('/item', [ItemController::class, 'item']);
     Route::get('/sell', [AuthController::class, 'sell']);
+    Route::get('/create', [ItemController::class, 'create']);
+    Route::post('/store', [ItemController::class, 'store'])->name('store');
 });

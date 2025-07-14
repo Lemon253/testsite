@@ -40,7 +40,7 @@
                     @endif
                     <li class="header-nav__item">
                         <!-- 出品ページを作ってaタグのリンクを変更 -->
-                        <a href="/login" class="header-nav__link--sell">出品</a>
+                        <a href="/create" class="header-nav__link--sell">出品</a>
                     </li>
                 </ul>
             </nav>

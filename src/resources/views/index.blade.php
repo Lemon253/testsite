@@ -8,10 +8,9 @@
 <div class="flex__item">
     @foreach($items as $item)
     <div class="practice__card">
-        <!-- 商品詳細ページに飛ぶ？ -->
         <a href="/item">
             <div class="card__img">
-                <img src="{{ asset('storage/img/card.jpg')}}" />
+                <img src="{{ asset('storage/' . $item->image_url)}}" />
             </div>
         </a>
         <div class="card__content">

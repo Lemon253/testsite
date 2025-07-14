@@ -20,7 +20,28 @@ class ItemController extends Controller
         return view('item');
     }
 
+    public function create() {
+        return view('create');
+    }
 
+    public function store(Request $request) {
+        $parameters = $request->only([
+            'name',
+            'price',
+        ]);
+
+        if($request->hasFile('image_url')){
+            $file = $request->file('image_url');
+            $path = $file->store('public/img');
+            $filename = basename($path);
+            $parameters['image_url'] = 'img/' . $filename;
+
+        }
+
+        Item::create($parameters);
+
+        return redirect('/');
+    }
     //出品時のメッセージ送信
     /*
     public function sell(Request $request)

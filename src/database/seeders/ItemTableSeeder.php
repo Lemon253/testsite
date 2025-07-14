@@ -18,7 +18,7 @@ class ItemTableSeeder extends Seeder
         $item = [
             'name' => 'ringo',
             'price' => 300,
-            'image_url' => 'aaa',
+            'image_url' => 'img/card.jpg',
 
         ];
         Item::create($item);
@@ -26,14 +26,14 @@ class ItemTableSeeder extends Seeder
         $item = [
             'name' => 'mikan',
             'price' => 300,
-            'image_url' => 'aaa',
+            'image_url' => 'img/card.jpg',
 
         ];
         Item::create($item);
         $item = [
             'name' => 'nashi',
             'price' => 300,
-            'image_url' => 'aaa',
+            'image_url' => 'img/card.jpg',
 
         ];
         Item::create($item);
