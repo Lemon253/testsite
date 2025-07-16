@@ -1,0 +1,28 @@
+.create-form{
+    margin: 20px;
+}
+
+.create-form__name{
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 30px;
+margin-bottom: 20px;
+}
+
+.create-form__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.create-form__image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
